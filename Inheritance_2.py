@@ -31,3 +31,8 @@ print(dolphin.breathe())
 print(pet.type)
 print(pet.breathe())
 print(pet.bark())
+
+print(isinstance(pet,Dog))
+print(isinstance(pet,Animal))
+print(isinstance(dolphin,Dog))
+print(isinstance(dolphin,Animal))
