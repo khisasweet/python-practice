@@ -16,11 +16,10 @@ class Vehicle:
     timer.sleep(0.25)
     self.controller.change_direction(left, False)
 
+wheeled = Vehicle(Wheels())
+tracked = Vehicle(Tracks())
 
-    wheeled = Vehicle(Wheels())
-    tracked = Vehicle(Tracks())
-
-    wheeled.turn(True)
-    tracked.turn(False)
+wheeled.turn(True)
+tracked.turn(False)
     
     
