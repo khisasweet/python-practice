@@ -5,7 +5,7 @@ class Animal:
 
 class Mammal(Animal):
   def __init__(self, animal):
-    super.__init__("mammal")
+    super().__init__("mammal")
     self.animal = animal
 
   def breathe(self):
@@ -13,7 +13,7 @@ class Mammal(Animal):
 
 class Dog(Mammal):
   def __init__(self, breed):
-    super.__init__("dog")
+    super().__init__("dog")
     self.breed = breed
 
   def bark(self):
