@@ -1,4 +1,4 @@
-### The ability to change the superclass' behavior is called polymorphism #####
+import time
 
 class Tracks:
   def change_direction(self, left, on):
@@ -13,7 +13,7 @@ class Vehicle:
     self.controller = controller
   def turn(self, left):
     self.controller.change_direction(left, True)
-    timer.sleep(0.25)
+    time.sleep(0.25)
     self.controller.change_direction(left, False)
 
 wheeled = Vehicle(Wheels())
@@ -21,5 +21,3 @@ tracked = Vehicle(Tracks())
 
 wheeled.turn(True)
 tracked.turn(False)
-    
-    
