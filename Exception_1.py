@@ -6,6 +6,8 @@ def calc(num):
         print("You cabbot divide by zero.")
     else:
         print("All good")
+    finally:
+        print("Done with calc!")
 
 calc(0)
 calc(10)
