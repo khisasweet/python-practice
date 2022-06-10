@@ -23,3 +23,13 @@ r = CustomRange(10)
 print(r.__next__())
 print(r.__next__())
 print(r.__next__())
+
+def generator_thr_iter():
+   yield 'xyz'
+   yield 246
+   yield 40.50
+    
+g = generator_thr_iter()
+g.__next__()
+g.__next__()
+g.__next__()
